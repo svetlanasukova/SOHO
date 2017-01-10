@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SOHO.iml" filepath="$PROJECT_DIR$/.idea/SOHO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Soho_theme/.idea/Soho_theme.iml" filepath="$PROJECT_DIR$/../Soho_theme/.idea/Soho_theme.iml" />
+    </modules>
+  </component>
+</project>
