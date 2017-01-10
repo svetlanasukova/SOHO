@@ -1,20 +1,20 @@
 var gulp = require('gulp');
-var concatCss = require('gulp-concat-css');
 var cleanCSS = require('gulp-clean-css');
 var includer = require('gulp-htmlincluder');
 var connect = require('gulp-connect');
 var livereload = require('gulp-livereload');
 var replace = require('gulp-html-replace');
-var spritecreator = require("gulp-spritesmith");
+var spritecreator = require('gulp-spritesmith');
+var less = require('gulp-less');
 
-gulp.task('css', function () {
-    return gulp.src('assets/dev/css/**/*.css')
-        .pipe(concatCss("style.css"))
+gulp.task('less', function(){
+    return gulp.src('assets/dev/less/general.less')
+        .pipe(less())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('assets/build/css/'))
         .pipe(connect.reload());
 });
-gulp.task('html', function() {
+gulp.task('html', function(){
     gulp.src('assets/dev/**/*.html')
         .pipe(includer())
         .pipe(replace({
@@ -30,12 +30,12 @@ gulp.task('connect', function() {
     });
 });
 gulp.task('default', function (){
-    gulp.start('connect', 'html', 'css');
+    gulp.start('connect', 'html', 'less');
     gulp.watch(['assets/dev/**/*.html'], function(event){
        gulp.start('html');
     });
-    gulp.watch(['assets/dev/css/**/*.css'], function(event){
-        gulp.start('css');
+    gulp.watch(['assets/dev/less/**/*.less'], function(event){
+        gulp.start('less');
     });
 });
 gulp.task('sprite', function(){
@@ -48,7 +48,6 @@ gulp.task('sprite', function(){
     spriteData.img.pipe(gulp.dest('assets/build/icons/'));
     spriteData.css.pipe(gulp.dest('assets/build/css/'));
 });
-gulp.task('server', function(){
 
-});
+
 

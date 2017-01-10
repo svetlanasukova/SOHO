@@ -3,16 +3,15 @@
   "version": "0.0.1",
   "author": "svetlanasukova",
   "description": "Graduation project for IT Academy STEP",
-  "repository": "https://github.com/svetlanasukova/SOHO.git",
+  "repository": "https://github.com/svetlanasukova/Soho.git",
   "devDependencies": {
     "concat": "0.0.1-security",
-    "css": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.3.2",
-    "gulp-concat-css": "^2.3.0",
     "gulp-connect": "^5.0.0",
     "gulp-html-replace": "^1.6.2",
     "gulp-htmlincluder": "^0.1.0",
+    "gulp-less": "^3.3.0",
     "gulp-livereload": "^3.8.1",
     "gulp-spritesmith": "0.0.2"
   }
