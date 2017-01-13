@@ -13,6 +13,6 @@
     "gulp-htmlincluder": "^0.1.0",
     "gulp-less": "^3.3.0",
     "gulp-livereload": "^3.8.1",
-    "gulp-spritesmith": "0.0.2"
+    "gulp.spritesmith": "^6.2.1"
   }
 }

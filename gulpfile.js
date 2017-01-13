@@ -4,7 +4,7 @@ var includer = require('gulp-htmlincluder');
 var connect = require('gulp-connect');
 var livereload = require('gulp-livereload');
 var replace = require('gulp-html-replace');
-var spritecreator = require('gulp-spritesmith');
+var spritesmith = require('gulp.spritesmith');
 var less = require('gulp-less');
 
 gulp.task('less', function(){
@@ -39,14 +39,14 @@ gulp.task('default', function (){
     });
 });
 gulp.task('sprite', function(){
-    var spriteData = gulp.src('assets/dev/icons/*.png')
-        .pipe(spritecreator({
-            imgName:'sprite.png',
-            cssName:'sprite.css',
-            algorithm:'binary-tree'
-    }));
-    spriteData.img.pipe(gulp.dest('assets/build/icons/'));
-    spriteData.css.pipe(gulp.dest('assets/build/css/'));
+    gulp.src('assets/dev/icons/**/*.*')
+        .pipe(spritesmith({
+            imgName:'assets/build/img/sprite.png',
+            cssName:'assets/dev/less/import/sprite.less',
+            cssFormat: 'less',
+            algorithm:'binary-tree',
+            padding: 10
+    })).pipe(gulp.dest('./'));
 });
 
 
