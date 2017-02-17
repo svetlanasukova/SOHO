@@ -1,0 +1,61 @@
+.smm{
+  margin-bottom: 60px;
+  text-align: center;
+  &-subscribe{
+    @media screen and (min-width: @mobWidth){
+      display: inline-block;
+      margin-right: 30px;
+    }
+    margin: 60px 0 40px 0;
+    font-size: 26px;
+    font-family: @JosefinSans;
+    &-bold{
+      font-family: @JosefinSansBold;
+    }
+  }
+  &-email{
+    height:57px;
+    width: 273px;
+    border: 1px solid #e8e8e8;
+    background: #fcfafa;
+    font-size: 20px;
+    font-family: @JosefinSans;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    &-but{
+      width: 135px;
+      height: 57px;
+      border: none;
+      background: #acdadc;
+      color: @white;
+      font-size: 22px;
+      font-family: @JosefinSansBold;
+    }
+    &-wrap{
+      @media screen and (min-width: @mobWidth){
+        display: inline-block;
+      }
+    }
+  }
+}
+.social a{
+  margin-right: 15px;
+  display: inline-block;
+  width: 58px;
+  height:58px;
+}
+
+.social a:last-child{
+  margin-right: 0;
+}
+.fb{
+  background-color: #3b5998;
+}
+.tw{
+  background-color: #26a6d1;
+}
+.insta{
+  background-color: #3f729b;
+}

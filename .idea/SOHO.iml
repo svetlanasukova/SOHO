@@ -15,5 +15,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="Soho_theme" />
+    <orderEntry type="module" module-name="flexslider" />
   </component>
 </module>

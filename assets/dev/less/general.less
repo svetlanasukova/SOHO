@@ -1,4 +1,62 @@
-@import 'import/1_reset.css';
+@import 'import/_reset';
+@import 'import/bootstrap';
 @import 'import/_settings';
 @import 'import/_mixins';
+@import 'import/sprite';
+@import 'import/fonts';
+@import 'import/icons';
 @import 'import/header';
+@import 'import/slider';
+@import 'import/submenu';
+@import 'import/menu';
+@import 'import/cart';
+@import 'import/items';
+@import 'import/smm';
+@import 'import/footer';
+@import 'import/category-logo';
+@import 'import/product';
+//-------------------------------grid--------------------------//
+.row{
+  margin: 0;
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.col{
+  float: left;
+}
+.grid-universe(xs, 1);
+@media screen and (min-width: 970px){
+  .grid-universe(m, 12);
+}
+@media screen and (min-width: 1148px){
+  .grid-universe(l, 12);
+}
+//-----------------------------------------general------------------------//
+a{
+  text-decoration: none;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+
+
+.glyphicon-remove{
+  font-size: 24px;
+}
+body{
+  overflow: auto;
+
+}
+
+
+
+

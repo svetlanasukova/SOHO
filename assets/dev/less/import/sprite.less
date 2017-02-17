@@ -1,0 +1,418 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@chosen-sprite-name: 'chosen-sprite';
+@chosen-sprite-x: 1444px;
+@chosen-sprite-y: 269px;
+@chosen-sprite-offset-x: -1444px;
+@chosen-sprite-offset-y: -269px;
+@chosen-sprite-width: 52px;
+@chosen-sprite-height: 37px;
+@chosen-sprite-total-width: 1513px;
+@chosen-sprite-total-height: 1306px;
+@chosen-sprite-image: @path_to_sprite;
+@chosen-sprite: 1444px 269px -1444px -269px 52px 37px 1513px 1306px @path_to_sprite 'chosen-sprite';
+@chosen-sprite-2x-name: 'chosen-sprite@2x';
+@chosen-sprite-2x-x: 1330px;
+@chosen-sprite-2x-y: 269px;
+@chosen-sprite-2x-offset-x: -1330px;
+@chosen-sprite-2x-offset-y: -269px;
+@chosen-sprite-2x-width: 104px;
+@chosen-sprite-2x-height: 74px;
+@chosen-sprite-2x-total-width: 1513px;
+@chosen-sprite-2x-total-height: 1306px;
+@chosen-sprite-2x-image: @path_to_sprite;
+@chosen-sprite-2x: 1330px 269px -1330px -269px 104px 74px 1513px 1306px @path_to_sprite 'chosen-sprite@2x';
+@controls-name: 'controls';
+@controls-x: 1330px;
+@controls-y: 353px;
+@controls-offset-x: -1330px;
+@controls-offset-y: -353px;
+@controls-width: 96px;
+@controls-height: 63px;
+@controls-total-width: 1513px;
+@controls-total-height: 1306px;
+@controls-image: @path_to_sprite;
+@controls: 1330px 353px -1330px -353px 96px 63px 1513px 1306px @path_to_sprite 'controls';
+@arrow-mini-name: 'arrow-mini';
+@arrow-mini-x: 1494px;
+@arrow-mini-y: 394px;
+@arrow-mini-offset-x: -1494px;
+@arrow-mini-offset-y: -394px;
+@arrow-mini-width: 8px;
+@arrow-mini-height: 5px;
+@arrow-mini-total-width: 1513px;
+@arrow-mini-total-height: 1306px;
+@arrow-mini-image: @path_to_sprite;
+@arrow-mini: 1494px 394px -1494px -394px 8px 5px 1513px 1306px @path_to_sprite 'arrow-mini';
+@bag-name: 'bag';
+@bag-x: 1330px;
+@bag-y: 464px;
+@bag-offset-x: -1330px;
+@bag-offset-y: -464px;
+@bag-width: 20px;
+@bag-height: 25px;
+@bag-total-width: 1513px;
+@bag-total-height: 1306px;
+@bag-image: @path_to_sprite;
+@bag: 1330px 464px -1330px -464px 20px 25px 1513px 1306px @path_to_sprite 'bag';
+@base-arrow-mini-name: 'base-arrow-mini';
+@base-arrow-mini-x: 1360px;
+@base-arrow-mini-y: 464px;
+@base-arrow-mini-offset-x: -1360px;
+@base-arrow-mini-offset-y: -464px;
+@base-arrow-mini-width: 20px;
+@base-arrow-mini-height: 20px;
+@base-arrow-mini-total-width: 1513px;
+@base-arrow-mini-total-height: 1306px;
+@base-arrow-mini-image: @path_to_sprite;
+@base-arrow-mini: 1360px 464px -1360px -464px 20px 20px 1513px 1306px @path_to_sprite 'base-arrow-mini';
+@facebook-mini-name: 'facebook-mini';
+@facebook-mini-x: 1496px;
+@facebook-mini-y: 353px;
+@facebook-mini-offset-x: -1496px;
+@facebook-mini-offset-y: -353px;
+@facebook-mini-width: 13px;
+@facebook-mini-height: 26px;
+@facebook-mini-total-width: 1513px;
+@facebook-mini-total-height: 1306px;
+@facebook-mini-image: @path_to_sprite;
+@facebook-mini: 1496px 353px -1496px -353px 13px 26px 1513px 1306px @path_to_sprite 'facebook-mini';
+@insta-mini-name: 'insta-mini';
+@insta-mini-x: 1330px;
+@insta-mini-y: 426px;
+@insta-mini-offset-x: -1330px;
+@insta-mini-offset-y: -426px;
+@insta-mini-width: 28px;
+@insta-mini-height: 28px;
+@insta-mini-total-width: 1513px;
+@insta-mini-total-height: 1306px;
+@insta-mini-image: @path_to_sprite;
+@insta-mini: 1330px 426px -1330px -426px 28px 28px 1513px 1306px @path_to_sprite 'insta-mini';
+@mastercard-mini-name: 'mastercard-mini';
+@mastercard-mini-x: 1436px;
+@mastercard-mini-y: 353px;
+@mastercard-mini-offset-x: -1436px;
+@mastercard-mini-offset-y: -353px;
+@mastercard-mini-width: 50px;
+@mastercard-mini-height: 31px;
+@mastercard-mini-total-width: 1513px;
+@mastercard-mini-total-height: 1306px;
+@mastercard-mini-image: @path_to_sprite;
+@mastercard-mini: 1436px 353px -1436px -353px 50px 31px 1513px 1306px @path_to_sprite 'mastercard-mini';
+@menu-name: 'menu';
+@menu-x: 1406px;
+@menu-y: 426px;
+@menu-offset-x: -1406px;
+@menu-offset-y: -426px;
+@menu-width: 26px;
+@menu-height: 18px;
+@menu-total-width: 1513px;
+@menu-total-height: 1306px;
+@menu-image: @path_to_sprite;
+@menu: 1406px 426px -1406px -426px 26px 18px 1513px 1306px @path_to_sprite 'menu';
+@paypal-mini-name: 'paypal-mini';
+@paypal-mini-x: 1444px;
+@paypal-mini-y: 316px;
+@paypal-mini-offset-x: -1444px;
+@paypal-mini-offset-y: -316px;
+@paypal-mini-width: 60px;
+@paypal-mini-height: 20px;
+@paypal-mini-total-width: 1513px;
+@paypal-mini-total-height: 1306px;
+@paypal-mini-image: @path_to_sprite;
+@paypal-mini: 1444px 316px -1444px -316px 60px 20px 1513px 1306px @path_to_sprite 'paypal-mini';
+@twitter-mini-name: 'twitter-mini';
+@twitter-mini-x: 1368px;
+@twitter-mini-y: 426px;
+@twitter-mini-offset-x: -1368px;
+@twitter-mini-offset-y: -426px;
+@twitter-mini-width: 28px;
+@twitter-mini-height: 22px;
+@twitter-mini-total-width: 1513px;
+@twitter-mini-total-height: 1306px;
+@twitter-mini-image: @path_to_sprite;
+@twitter-mini: 1368px 426px -1368px -426px 28px 22px 1513px 1306px @path_to_sprite 'twitter-mini';
+@visa-mini-name: 'visa-mini';
+@visa-mini-x: 1436px;
+@visa-mini-y: 394px;
+@visa-mini-offset-x: -1436px;
+@visa-mini-offset-y: -394px;
+@visa-mini-width: 48px;
+@visa-mini-height: 17px;
+@visa-mini-total-width: 1513px;
+@visa-mini-total-height: 1306px;
+@visa-mini-image: @path_to_sprite;
+@visa-mini: 1436px 394px -1436px -394px 48px 17px 1513px 1306px @path_to_sprite 'visa-mini';
+@product-1-name: 'product_1';
+@product-1-x: 0px;
+@product-1-y: 0px;
+@product-1-offset-x: 0px;
+@product-1-offset-y: 0px;
+@product-1-width: 522px;
+@product-1-height: 596px;
+@product-1-total-width: 1513px;
+@product-1-total-height: 1306px;
+@product-1-image: @path_to_sprite;
+@product-1: 0px 0px 0px 0px 522px 596px 1513px 1306px @path_to_sprite 'product_1';
+@product-10-name: 'product_10';
+@product-10-x: 532px;
+@product-10-y: 0px;
+@product-10-offset-x: -532px;
+@product-10-offset-y: 0px;
+@product-10-width: 281px;
+@product-10-height: 281px;
+@product-10-total-width: 1513px;
+@product-10-total-height: 1306px;
+@product-10-image: @path_to_sprite;
+@product-10: 532px 0px -532px 0px 281px 281px 1513px 1306px @path_to_sprite 'product_10';
+@product-11-name: 'product_11';
+@product-11-x: 823px;
+@product-11-y: 1058px;
+@product-11-offset-x: -823px;
+@product-11-offset-y: -1058px;
+@product-11-width: 260px;
+@product-11-height: 179px;
+@product-11-total-width: 1513px;
+@product-11-total-height: 1306px;
+@product-11-image: @path_to_sprite;
+@product-11: 823px 1058px -823px -1058px 260px 179px 1513px 1306px @path_to_sprite 'product_11';
+@product-12-name: 'product_12';
+@product-12-x: 532px;
+@product-12-y: 831px;
+@product-12-offset-x: -532px;
+@product-12-offset-y: -831px;
+@product-12-width: 260px;
+@product-12-height: 256px;
+@product-12-total-width: 1513px;
+@product-12-total-height: 1306px;
+@product-12-image: @path_to_sprite;
+@product-12: 532px 831px -532px -831px 260px 256px 1513px 1306px @path_to_sprite 'product_12';
+@product-13-name: 'product_13';
+@product-13-x: 1093px;
+@product-13-y: 810px;
+@product-13-offset-x: -1093px;
+@product-13-offset-y: -810px;
+@product-13-width: 183px;
+@product-13-height: 259px;
+@product-13-total-width: 1513px;
+@product-13-total-height: 1306px;
+@product-13-image: @path_to_sprite;
+@product-13: 1093px 810px -1093px -810px 183px 259px 1513px 1306px @path_to_sprite 'product_13';
+@product-14-name: 'product_14';
+@product-14-x: 823px;
+@product-14-y: 527px;
+@product-14-offset-x: -823px;
+@product-14-offset-y: -527px;
+@product-14-width: 260px;
+@product-14-height: 251px;
+@product-14-total-width: 1513px;
+@product-14-total-height: 1306px;
+@product-14-image: @path_to_sprite;
+@product-14: 823px 527px -823px -527px 260px 251px 1513px 1306px @path_to_sprite 'product_14';
+@product-15-name: 'product_15';
+@product-15-x: 1093px;
+@product-15-y: 270px;
+@product-15-offset-x: -1093px;
+@product-15-offset-y: -270px;
+@product-15-width: 195px;
+@product-15-height: 260px;
+@product-15-total-width: 1513px;
+@product-15-total-height: 1306px;
+@product-15-image: @path_to_sprite;
+@product-15: 1093px 270px -1093px -270px 195px 260px 1513px 1306px @path_to_sprite 'product_15';
+@product-16-name: 'product_16';
+@product-16-x: 823px;
+@product-16-y: 788px;
+@product-16-offset-x: -823px;
+@product-16-offset-y: -788px;
+@product-16-width: 227px;
+@product-16-height: 260px;
+@product-16-total-width: 1513px;
+@product-16-total-height: 1306px;
+@product-16-image: @path_to_sprite;
+@product-16: 823px 788px -823px -788px 227px 260px 1513px 1306px @path_to_sprite 'product_16';
+@product-17-name: 'product_17';
+@product-17-x: 532px;
+@product-17-y: 561px;
+@product-17-offset-x: -532px;
+@product-17-offset-y: -561px;
+@product-17-width: 260px;
+@product-17-height: 260px;
+@product-17-total-width: 1513px;
+@product-17-total-height: 1306px;
+@product-17-image: @path_to_sprite;
+@product-17: 532px 561px -532px -561px 260px 260px 1513px 1306px @path_to_sprite 'product_17';
+@product-2-name: 'product_2';
+@product-2-x: 0px;
+@product-2-y: 606px;
+@product-2-offset-x: 0px;
+@product-2-offset-y: -606px;
+@product-2-width: 443px;
+@product-2-height: 700px;
+@product-2-total-width: 1513px;
+@product-2-total-height: 1306px;
+@product-2-image: @path_to_sprite;
+@product-2: 0px 606px 0px -606px 443px 700px 1513px 1306px @path_to_sprite 'product_2';
+@product-3-name: 'product_3';
+@product-3-x: 1093px;
+@product-3-y: 0px;
+@product-3-offset-x: -1093px;
+@product-3-offset-y: 0px;
+@product-3-width: 227px;
+@product-3-height: 260px;
+@product-3-total-width: 1513px;
+@product-3-total-height: 1306px;
+@product-3-image: @path_to_sprite;
+@product-3: 1093px 0px -1093px 0px 227px 260px 1513px 1306px @path_to_sprite 'product_3';
+@product-4-name: 'product_4';
+@product-4-x: 823px;
+@product-4-y: 0px;
+@product-4-offset-x: -823px;
+@product-4-offset-y: 0px;
+@product-4-width: 260px;
+@product-4-height: 256px;
+@product-4-total-width: 1513px;
+@product-4-total-height: 1306px;
+@product-4-image: @path_to_sprite;
+@product-4: 823px 0px -823px 0px 260px 256px 1513px 1306px @path_to_sprite 'product_4';
+@product-5-name: 'product_5';
+@product-5-x: 823px;
+@product-5-y: 266px;
+@product-5-offset-x: -823px;
+@product-5-offset-y: -266px;
+@product-5-width: 260px;
+@product-5-height: 251px;
+@product-5-total-width: 1513px;
+@product-5-total-height: 1306px;
+@product-5-image: @path_to_sprite;
+@product-5: 823px 266px -823px -266px 260px 251px 1513px 1306px @path_to_sprite 'product_5';
+@product-6-name: 'product_6';
+@product-6-x: 1093px;
+@product-6-y: 540px;
+@product-6-offset-x: -1093px;
+@product-6-offset-y: -540px;
+@product-6-width: 195px;
+@product-6-height: 260px;
+@product-6-total-width: 1513px;
+@product-6-total-height: 1306px;
+@product-6-image: @path_to_sprite;
+@product-6: 1093px 540px -1093px -540px 195px 260px 1513px 1306px @path_to_sprite 'product_6';
+@product-7-name: 'product_7';
+@product-7-x: 532px;
+@product-7-y: 291px;
+@product-7-offset-x: -532px;
+@product-7-offset-y: -291px;
+@product-7-width: 260px;
+@product-7-height: 260px;
+@product-7-total-width: 1513px;
+@product-7-total-height: 1306px;
+@product-7-image: @path_to_sprite;
+@product-7: 532px 291px -532px -291px 260px 260px 1513px 1306px @path_to_sprite 'product_7';
+@product-8-name: 'product_8';
+@product-8-x: 532px;
+@product-8-y: 1097px;
+@product-8-offset-x: -532px;
+@product-8-offset-y: -1097px;
+@product-8-width: 260px;
+@product-8-height: 179px;
+@product-8-total-width: 1513px;
+@product-8-total-height: 1306px;
+@product-8-image: @path_to_sprite;
+@product-8: 532px 1097px -532px -1097px 260px 179px 1513px 1306px @path_to_sprite 'product_8';
+@product-9-name: 'product_9';
+@product-9-x: 1330px;
+@product-9-y: 0px;
+@product-9-offset-x: -1330px;
+@product-9-offset-y: 0px;
+@product-9-width: 183px;
+@product-9-height: 259px;
+@product-9-total-width: 1513px;
+@product-9-total-height: 1306px;
+@product-9-image: @path_to_sprite;
+@product-9: 1330px 0px -1330px 0px 183px 259px 1513px 1306px @path_to_sprite 'product_9';
+@spritesheet-width: 1513px;
+@spritesheet-height: 1306px;
+@spritesheet-image: @path_to_sprite;
+@spritesheet-sprites: @chosen-sprite @chosen-sprite-2x @controls @arrow-mini @bag @base-arrow-mini @facebook-mini @insta-mini @mastercard-mini @menu @paypal-mini @twitter-mini @visa-mini @product-1 @product-10 @product-11 @product-12 @product-13 @product-14 @product-15 @product-16 @product-17 @product-2 @product-3 @product-4 @product-5 @product-6 @product-7 @product-8 @product-9;
+@spritesheet: 1513px 1306px @path_to_sprite @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

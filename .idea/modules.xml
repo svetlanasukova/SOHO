@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SOHO.iml" filepath="$PROJECT_DIR$/.idea/SOHO.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Soho_theme/.idea/Soho_theme.iml" filepath="$PROJECT_DIR$/../Soho_theme/.idea/Soho_theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flexslider/.idea/flexslider.iml" filepath="$PROJECT_DIR$/../flexslider/.idea/flexslider.iml" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,56 @@
 .header{
-  background-color: pink;
-  &-wrap{
-    width: 1000px;
+  z-index: 100;
+  width:100%;
+  text-align: center;
+  position: fixed;
+  height: 60px;
+  background-color: @grey;
+  &-menu-but{
+    width: 60px;
+    height: 60px;
+    line-height: 67px;
+    z-index: 101;
+    //clear: both;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    border-right: 1px solid @bordergrey;
+
+    &-line{
+      //margin-bottom: 6px;
+      //clear: both;
+      width: 26px;
+      height: 2px;
+      background-color: white;
+    }
+  }
+  &-logo{
+    line-height: 50%;
     margin: 0 auto;
+    box-sizing: border-box;
+    .text-center;
+    display: inline-block;
+    height: 60px;
+    padding: 20px 0;
+  }
+  &-logo a{
+    text-decoration: none;
+    font-family: @JosefinSansBold;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: 26px;
+    color: @white;
+  }
+  &-bag-but{
+    //clear: both;
+    line-height: 74px;
+    border-left: 1px solid @bordergrey;
+    width: 60px;
+    height: 60px;
+    float: right;
   }
 }
+//.text{
+//  margin-top: 60px;
+//}

@@ -1,0 +1,81 @@
+.footer{
+  padding: 60px 0;
+  text-align: center;
+  background-color: @grey;
+  color: @white;
+  &-about{
+    font-size: 40px;
+    font-family: @JosefinSansBold;
+    @media screen and (min-width: @mobWidth){
+      display: none;
+    }
+    @media screen and (min-width: @tabletWidth){
+      display: inline-block;
+    }
+  }
+  &-info{
+    padding: 0 25px;
+    font-size: 18px;
+    font-family: @WorkSansMedium;
+    margin-bottom: 40px;
+    @media screen and (min-width: @mobWidth){
+      display: inline-block;
+    }
+    @media screen and (min-width: @tabletWidth){
+
+    }
+  }
+  &-text{
+    font-size: 18px;
+    font-family: @JosefinSans;
+    & a{
+      color: @white;
+    }
+  }
+  &-tex1{
+    margin-bottom: 15px;
+  }
+  &-text2{
+    margin-bottom: 40px;
+  }
+  &-card a{
+    margin-top: 40px;
+    cursor: pointer;
+    margin-right: 18px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &-links{
+    display: none;
+    @media screen and (min-width: @mobWidth){
+      display: inline-block;
+    }
+    color: @white;
+    text-decoration: underline;
+  }
+  &-links ul{
+    color: @white;
+  }
+  &-labels, &-pages{
+    margin-right: 90px;
+    text-decoration: underline;
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+
+
+
+  }
+  &-labels a, &-pages a{
+    color: @white;
+    font-family:@JosefinSans ;
+    font-size: 18px;
+  }
+  &-labels li, &-pages li{
+    margin-bottom: 15px;
+  }
+  &-wrap-info{
+    display: inline-block;
+  }
+}

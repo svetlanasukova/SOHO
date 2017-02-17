@@ -1,0 +1,33 @@
+.category{
+  text-align: center;
+  background: #242424 url("../img/head_bg.jpg") ;
+  //background-image: url("../img/head_bg.jpg");
+  ////background-position-x: 50%;
+  ////background-position-y: 50%;
+  background-size: cover;
+  ////background-repeat-x: initial;
+  ////background-repeat-y: initial;
+  //background-attachment: initial;
+  //background-origin: initial;
+  //background-clip: initial;
+  //background-color: rgb(36, 36, 36);
+  padding-top: 40px;
+
+  //width: calc(100% + 20vw);
+  //height: calc(100% + 4vw);
+  &-name{
+    font-size: 30px;
+    @media screen and (min-width: @mobWidth){
+      font-size: 50px;
+    }
+    @media screen and (min-width: @tabletWidth){
+      font-size: 90px;
+    }
+    line-height: 500%;
+    color: @white;
+    text-shadow: 0 0 40px rgba(0,0,1,.2);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: @JosefinSansBold;
+  }
+}
